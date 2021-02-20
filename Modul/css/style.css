@@ -33,16 +33,16 @@ button:focus {
 
 .button-search {
   position: relative;
-	font-weight: 800;
-	min-width: 140px;
-	border: none;
-	padding: 12px 5px;
-	color: rgb(0, 0, 0);
-	cursor: pointer;
+  font-weight: 800;
+  min-width: 140px;
+  border: none;
+  padding: 12px 5px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
   overflow: hidden;
   border-radius: 10px;
   border: 2px solid rgb(0, 0, 0);
-  transition: .3s linear;
+  transition: 0.3s linear;
   border-radius: 0 10px 10px 0;
   background: none;
   z-index: 1;
@@ -63,7 +63,7 @@ button:focus {
   transform: translateY(-50%);
   background-color: #111;
   z-index: -1;
-  transition: width .4s linear;
+  transition: width 0.4s linear;
 }
 
 .button-search:hover:before {
@@ -97,7 +97,11 @@ img {
   max-width: 100%;
   overflow: hidden;
   min-height: 100vh;
-  background: linear-gradient(to right, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(69, 72, 77, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .container {
@@ -114,7 +118,7 @@ img {
   padding: 15px;
   position: relative;
   background-color: rgba(255, 255, 255);
-  border-bottom: 2px solid rgb(0, 0, 0);;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .nav {
@@ -137,7 +141,7 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
-  transition: color .3s linear;
+  transition: color 0.3s linear;
   color: rgb(0, 0, 0);
   z-index: 1;
 }
@@ -204,5 +208,5 @@ img {
 }
 
 .movies-content {
-  background-color: rgba(255, 255, 255);;
+  background-color: rgba(255, 255, 255);
 }
