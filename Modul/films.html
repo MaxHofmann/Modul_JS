@@ -4,12 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link media="all" rel="stylesheet" href="../css/normalize.css" />
-    <link media="all" rel="stylesheet" href="../css/style.css" />
+    <link media="all" rel="stylesheet" href="css/normalize.css" />
+    <link media="all" rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
+      
+      <div class="image-bg">
+        <div class="img img-1">
+          <img src="./image/img1.png" alt="">
+        </div>
+        <div class="img img-2">
+          <img src="./image/img2.png" alt="">
+        </div>
+        <div class="img img-3">
+          <img src="./image/img3.png" alt="">
+        </div>
+      </div>
+      <div class="dark-layer"></div>
       <header class="header">
         <div class="container">
           <div class="header-content">
@@ -46,18 +59,48 @@
                 <span class="brand-name">Max movie</span>
               </div>
               <div class="search-content">
-                <ul id="filter-select" class="menu-filter">
-                  <li class="filter-item">
-                    <ul>Genres</ul>
-                  </li>
-                  <li class="filter-item">
-                    <ul>Country</ul>
-                  </li>
-                </ul>
-                <button id="button-filter" class="button-fil"><span class="block-arrow"></span></button>
+                <div id="filter-block" class="menu-filter">
+                  <div class="filter-item">
+                    <div class="select">
+                      <div class="select-header">
+                        <span id="genres" class="select-current">Genres</span>
+                        <div class="fas fa-chevron-down"></div>
+                      </div>
+
+                      <div class="select-body">
+                        <div class="select-item">Comedy</div>
+                        <div class="select-item">Family</div>
+                        <div class="select-item">Drama</div>
+                        <div class="select-item">War</div>
+                        <div class="select-item">History</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-item">
+                    <div class="select">
+                      <div class="select-header">
+                        <span id="language" class="select-current"
+                          >Language</span
+                        >
+                        <div class="fas fa-chevron-down"></div>
+                      </div>
+                      <div class="select-body">
+                        <div class="select-item">English</div>
+                        <div class="select-item">Norwegian</div>
+                        <div class="select-item">Japanese</div>
+                        <div class="select-item">Thai</div>
+                        <div class="select-item">Russian</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button id="button-filter" class="button-fil">
+                  <span class="block-arrow"></span>
+                </button>
                 <input
                   placeholder="Enter the title of the movie"
-                  type="text" id="inp-search"
+                  type="text"
+                  id="inp-search"
                   class="input-search"
                 />
                 <button id="search" class="button-search">Search</button>
@@ -68,12 +111,41 @@
 
         <section class="section-movies">
           <div class="container">
-            <div id="movies-content" class="movies-content"></div>
+            <div class="pagination-box">
+              <div class="pagination-block">
+                <div
+                  id="arrow-priv"
+                  class="far fa-arrow-alt-circle-left arrow-page"
+                ></div>
+                <div class="numbers-page">
+                  <span class="number">3</span>
+                  <span class="number">6</span>
+                  <span class="number">9</span>
+                  <span class="number">12</span>
+                </div>
+                <div
+                  id="arrow-next"
+                  class="far fa-arrow-alt-circle-right arrow-page"
+                ></div>
+              </div>
+              <div id="page-line" class="content-line">
+                <div id="dist-block" class="distance-block">
+                </div>
+              </div>
+              <span id="start-page" class="page-number">0</span>
+              <span id="finish-page" class="page-number">9</span>
+            </div>
+            <div class="movie-section">
+              <div id="movies-content" class="movies-content"></div>
+            </div>
           </div>
         </section>
       </main>
     </div>
-    <script src="../js/app.js"></script>
-    <script src="https://kit.fontawesome.com/edd672f5b0.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/edd672f5b0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
