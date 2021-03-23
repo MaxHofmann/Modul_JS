@@ -12,15 +12,26 @@
     <div class="wrapper">
       <header class="header">
         <div class="container">
+          <div class="image-bg">
+            <div class="img img-1">
+              <img src="./image/img3.png" alt="" />
+            </div>
+            <div class="img img-2">
+              <img src="./image/img1.png" alt="" />
+            </div>
+            <div class="img img-3">
+              <img src="./image/img2.png" alt="" />
+            </div>
+          </div>
           <div class="header-content">
             <a href="index.html" class="logo">
               <img src="image/logo.png" alt="logo" />
             </a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav-menu">
               <ul class="nav-menu" id="nav">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">About</a>
+                  <a class="nav-link" href="#">About</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="films.html">Films</a>
@@ -33,6 +44,10 @@
                 </li>
               </ul>
             </nav>
+
+            <button class="burger" type="button" id="navigationToggle">
+              <span class="burger-menu">Menu</span>
+            </button>
           </div>
         </div>
       </header>
@@ -40,14 +55,19 @@
       <main>
         <div class="container">
           <div class="movie-section">
-            <div id="push-favorite" class="movies-content">
-
+            <div class="movies-content">
+              <div id="push-favorite" class="wrraper-img-fav"></div>
             </div>
           </div>
         </div>
       </main>
     </div>
-    <script src="js/app.js"></script>
-    <script src="https://kit.fontawesome.com/edd672f5b0.js" crossorigin="anonymous"></script>
+
+    <script type="module" src="js/favourite.js"></script>
+    <script type="module" src="js/animation-fav.js"></script>
+    <script
+      src="https://kit.fontawesome.com/edd672f5b0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
